@@ -1,0 +1,638 @@
+/* ====================================
+            Common css style 
+   ====================================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #000;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+}
+
+section{
+  padding: 60px 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  margin-bottom: 1em;
+  font-family: "Raleway", sans-serif;
+  color: #000;
+  font-weight: bold;
+}
+
+p{
+  color: #272829;
+  font-size: 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ====================================
+            header_area css style 
+   ====================================*/
+#header_section{
+  background: #040b14;
+  border-right: 1px solid #1E242C;
+  width: 300px;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: 99999;
+}
+
+.header_show{
+  left: 0 !important;
+}
+
+#header_section .header-toggle{
+  background: #149ddd;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9999;
+  transition: background-color 0.3s;
+}
+
+#header_section .header-toggle:hover{
+  background-color: #36ABE2;
+}
+
+.header_img {
+  width: 100px;
+  height: 100px;
+  align-self: center;
+}
+
+.header_img img {
+  border-radius: 50%;
+  border: 9px solid #292F37;
+}
+
+.header_social a {
+  width: 40px;
+  height: 40px;
+  font-size: 1em;
+  color: #ffffff;
+  background: #1e242c;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s;
+}
+
+.header_social a:hover{
+  background: #149DDD;
+}
+
+.header_nav ul .nav-item{
+  margin-bottom: 15px;
+}
+
+.header_nav ul li .nav-link{
+  color: #a8a9b4;
+  margin: 0 1.5em;
+  font-size: 1.1em;
+  transition: all .3s;
+}
+
+.header_nav ul li .nav-link:hover{
+  color: #ffffff;
+}
+
+.header_nav ul li .nav-link:hover i:first-child{
+  color: #149ddd;
+}
+
+.header_nav ul li .nav-link i{
+  margin-right: 0.4em;
+}
+
+.dropdown_menu {
+  background: #040B14;
+  list-style: none;
+  padding: 10px;
+  margin: 10px 23px;
+  border: 1px solid #1E252C;
+  display: none;
+}
+
+.deep_drop_menu{
+  margin: 10px;
+}
+
+.dropdown_menu .nav-link{
+  margin: 0 !important;
+  margin-left: .7em !important;
+}
+
+.dropShow{
+  display: block;
+}
+
+.dropIcon{
+  color: #fff !important;
+  background: #149ddd !important;
+  transform: rotate(180deg);
+}
+
+.deepDropShow{
+  display: block;
+}
+
+.deepDropIcon{
+  color: #fff !important;
+  background: #149ddd !important;
+  transform: rotate(180deg);
+}
+
+.dropdown_btn .bi-chevron-down{
+  font-size: 12px;
+  background: #061A28;
+  line-height: 0;
+  transition: all .3s;
+  margin-right: 0 !important;
+}
+
+.dropdown_btn .bi-chevron-down:hover{
+  background: #149ddd;
+}
+
+.deep_drop_menu .nav-link{
+  margin: 0 !important;
+}
+
+.dropdownBtnIcon{
+  color: #149ddd;
+}
+
+.dropdownBtnSpan{
+  color: #ffffff;
+}
+
+/* ====================================
+            Hero Area css style 
+   ====================================*/
+#hero{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 0;
+  position: relative;
+}
+
+#hero img{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#hero .container{
+  position: relative;
+  z-index: 3;
+}
+
+#hero .container h2{
+  font-size: 3.3em;
+  font-weight: bold;
+}
+
+#hero .container p{
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+#hero .container p span{
+  color: #0d6efdb0;
+  border-bottom: 2px solid #0dcaf0;
+}
+
+/* ====================================
+            About Area css style 
+   ====================================*/
+.about_title h2, 
+.skill_title h2, 
+.resume_title h2,
+.portfolio_tittle h2,
+.service_tittle h2,
+.testimonial_title h2{
+  font-weight: bold;
+  position: relative;
+}
+
+.about_title h2::after, 
+.skill_title h2::after, 
+.resume_title h2::after,
+.portfolio_tittle h2::after,
+.service_tittle h2::after,
+.testimonial_title h2::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  border-radius: 5px;
+  position: absolute;
+  top: 52px;
+  left: 0;
+}
+
+.about_content .contents h2{
+  font-size: 23px;
+}
+
+.contents .col-lg-6 ul{
+  list-style: none;
+  padding: 0;
+}
+
+.contents .col-lg-6 ul li{
+  margin: 10px 0px;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.contents .col-lg-6 ul li i{
+  color: #149ddd;
+  margin-right: 7px;
+}
+
+.contents .col-lg-6 ul li strong{
+  margin-right: 10px;
+}
+
+/* ====================================
+            Stats Area css style 
+   ====================================*/
+#stats .stats_item{
+  padding: 20px;
+}
+
+#stats .stats_item i{
+  color: #149ddd;
+  font-size: 44px;
+  margin-right: 15px;
+}
+
+#stats .stats_item span{
+  font-size: 48px;
+  font-weight: bold;
+}
+
+#stats .stats_item p{
+  font-size: 14px;
+  margin-left: 60px;
+}
+
+#stats .stats_item p strong{
+  color: #7D7E7F;
+}
+
+#stats .stats_item p span{
+  font-size: 14px !important;
+  color: #7d7d7f8c;
+  font-weight: 400;
+}
+
+/* ====================================
+            Progress Area css style 
+   ====================================*/
+#skill{
+  background: #F4FAFD;
+}
+
+.progress_bar .skill{
+  font-size: 14px;
+  display: block;
+}
+
+.progress_bar .progress-bar-wrap{
+  width: 100%;
+  height: 10px;
+  background: #DFE5E7;
+}
+
+.progress-bar-wrap .progress-bar{
+  height: 10px;
+  background: #149ddd;
+  border-radius: 3px;
+}
+
+/* ====================================
+            Resume Area css style 
+   ====================================*/
+#resume .container{
+  padding-bottom: 20px;
+}
+
+.resume-content-title {
+  margin: 0.8em 0;
+}
+
+.resume-items {
+  padding-left: 20px;
+  padding-bottom: 1px;
+  border-left: 2px solid #149ddd;
+}
+
+.resume-items h4 {
+  font-size: 20px;
+  color: #272829c7;
+  font-weight: 600;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.resume-items h4::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 2px solid #149ddd;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: -29px;
+}
+
+.resume-items h5 {
+  font-size: 15px;
+  margin-left: 15px;
+  color: #050d18;
+}
+
+.resume-items ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.resume-items ul li {
+  padding: 8px 0px;
+}
+
+/* ====================================
+            Portfolio Area css style 
+   ====================================*/
+.portfolio_filters {
+  list-style: none;
+  padding: 15px 0px;
+  text-align: center;
+}
+
+.portfolio_filters li {
+  font-size: 15px;
+  margin: 0 10px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.portfolio_filters li:first-child{
+  margin-left: 0;
+}
+
+.portfolio_filters li:last-child{
+  margin-right: 0;
+}
+
+.portfolio_filters li:hover{
+  color: #149ddd;
+}
+
+.portfolio_childs {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio_childs img{
+  transition: .3s;
+}
+
+.portfolio_info {
+  height: auto;
+  position: absolute;
+  inset: 0;
+  padding: 15px;
+  z-index: 3;
+  background: #00000099;
+  transition: all ease-in-out 0.3s;
+  opacity: 0;
+}
+
+.portfolio_info h4 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  background: #149ddd;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.portfolio_info p {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 10px;
+  color: #ffffffcc;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.portfolio_info a {
+  display: inline-block;
+  position: absolute;
+  top: calc(50% - 14px);
+  left: calc(50% - 40px);
+  margin: 0px 7px;
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.portfolio_info .details_link {
+  left: 50%;
+  font-size: 34px;
+  line-height: 0;
+}
+
+.portfolio_info a:hover{
+  color: #149ddd;
+}
+
+.portfolio_childs:hover img{
+  transform: scale(1.1);
+}
+
+.portfolio_childs:hover .portfolio_info{
+  opacity: 1;
+}
+
+/* ====================================
+            Portfolio Area css style 
+   ====================================*/
+.service_child{
+  cursor: pointer;
+}
+
+.service_child:hover .service_icon{
+  background: transparent;
+}
+
+.service_child:hover .service_icon i{
+  color: #149ddd;
+}
+
+.service_child:hover .service_info .title a{
+  color: #149ddd;
+}
+
+.service_icon {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #149ddd;
+  border: 1px solid #149ddd;
+  margin-right: 20px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  transition: .3s;
+}
+
+.service_icon i {
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 0;
+}
+
+.service_info .title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.service_info .title a {
+  display: block;
+  color: #050d18;
+  text-decoration: none;
+}
+
+.service_info p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* ====================================
+            Testimonial Area css style 
+   ====================================*/
+#testimonial{
+  background: #F4FAFD;
+}
+
+.title-container{
+  padding-bottom: 25px;
+}
+
+.slide-content {
+  max-width: 1320px;
+  width: 100%;
+  margin: 10px auto;
+  background-color: red;
+}
+
+.testimonial_item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.testimonial_item p {
+  font-size: 14px;
+  background: #ffffff;
+  padding: 20px 14px;
+  border-radius: 7px;
+  font-style: italic;
+  text-align: center;
+  box-shadow: 0px 2px 12px #0000001a;
+  margin: 25px 0;
+  position: relative;
+}
+
+.testimonial_item p::after{
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: #ffffff;
+  bottom: -17px;
+  left: calc(50% - 20px);
+  transform: rotate(45deg);
+}
+
+.testimonial_item p i{
+  color: #72C4EB;
+  font-size: 22px;
+}
+
+.testimonial_item p i.qoute_right{
+  transform: scale(-1, -1);
+  position: relative;
+  display: inline-block;
+}
+
+.testimonial_item img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 25px 0;
+}
+
+.testimonial_item h3{
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+}
+
+.testimonial_item h4{
+  font-size: 14px;
+  color: #989C9F;
+}
