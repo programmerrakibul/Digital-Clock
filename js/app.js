@@ -7,6 +7,9 @@ function showTime() {
   mins = date.getMinutes();
   secs = date.getSeconds();
   let ampm = document.getElementById("am-pm");
+  hours = hours < 10 ? "0" + hours : hours;
+  mins = mins < 10 ? "0" + mins : mins;
+  secs = secs < 10 ? "0" + secs : secs;
 
   if (hours > 12) {
     hours -= 12;
