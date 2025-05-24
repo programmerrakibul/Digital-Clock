@@ -3,9 +3,9 @@
 let headerArea = document.querySelector('#header_section');
 let navToggleIcon = document.querySelector('#navToggle');
 
-function navToggle(){
+function navToggle() {
   headerArea.classList.toggle('header_show');
-  
+
   navToggleIcon.classList.toggle('bi-x');
   navToggleIcon.classList.toggle('bi-list');
 };
@@ -19,7 +19,7 @@ let dropdownBtnSpan = document.querySelector('.dropdown_btn span');
 let dropDown = document.querySelector('.dropdown_toggle');
 let dropToggle = document.querySelector('.dropToggle');
 
-function dropdownToggle(){
+function dropdownToggle() {
   dropdownBtnIcon.classList.toggle('dropdownBtnIcon');
   dropdownBtnSpan.classList.toggle('dropdownBtnSpan');
 
@@ -46,25 +46,36 @@ deepDropDown.addEventListener('click', function () {
 //Hero Area
 //Typed js
 var typed = new Typed(".auto-typed", {
-  strings : ["Programmer", "Designer", "Freelancer", "Photographer"],
-  typeSpeed : 90,
-  backSpeed : 90,
-  backDelay : 1700,
-  loop : true,
-  loopCount : Infinity
+  strings: ["Programmer", "Designer", "Freelancer", "Photographer"],
+  typeSpeed: 90,
+  backSpeed: 90,
+  backDelay: 1700,
+  loop: true,
+  loopCount: Infinity
 });
 
 //Testimonial Area
-var swiper = new Swiper(".slide-content", {
-  slidesPerView: 3,
+var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
+  freeMode: true,
   loop: true,
+  speed: 600,
+  autoplay: {
+    "delay": 5000
+  },
   pagination: {
     el: ".swiper-pagination",
+    type: "bullets",
     clickable: true,
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  breakpoints: {
+    "320": {
+      "slidesPerView": 1,
+      "spaceBetween": 40
+    },
+    "1200": {
+      "slidesPerView": 3,
+      "spaceBetween": 1
+    }
   },
 });
